@@ -1,0 +1,288 @@
+[90mTue, 16 Dec 2025 14:48:54 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:153[0m[36m >[0m [1mEnabling the capture of log-library logs as ithe _capturelog flag was detected[0m
+[90mTue, 16 Dec 2025 14:48:54 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:186[0m[36m >[0m [1mLogging Started. Root Logger Set to level debug[0m
+[90mTue, 16 Dec 2025 14:48:54 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:968[0m[36m >[0m [1mReading configuration for vmid[0m [36mloggerName=[0mresource_vm_read [36mvmid=[0m200
+2025/12/16 14:48:54 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:48:54 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1948
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:48:33 GMT
+Expires: Tue, 16 Dec 2025 13:48:33 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"id":"qemu/100","uptime":0,"node":"pve","mem":0,"template":0,"diskread":0,"netout":0,"disk":0,"maxcpu":1,"netin":0,"status":"stopped","cpu":0,"type":"qemu","maxmem":4294967296,"maxdisk":356482285568,"diskwrite":0,"name":"deb-syncthing","vmid":100},{"vmid":101,"name":"freebsd-web","diskwrite":0,"maxdisk":53687091200,"maxmem":2147483648,"type":"qemu","cpu":0,"status":"stopped","netin":0,"maxcpu":1,"disk":0,"netout":0,"diskread":0,"template":0,"mem":0,"node":"pve","id":"qemu/101","uptime":0},{"diskwrite":0,"maxmem":2147483648,"maxdisk":5368709120,"vmid":300,"name":"deb-13-clean","mem":0,"template":1,"id":"qemu/300","uptime":0,"node":"pve","maxcpu":1,"netin":0,"cpu":0,"status":"stopped","type":"qemu","diskread":0,"disk":0,"netout":0},{"mem":1519607808,"template":0,"uptime":4332025,"id":"qemu/301","node":"pve","maxcpu":1,"netin":1354225445,"status":"running","cpu":0.00219160330863177,"type":"qemu","diskread":486272590,"disk":0,"netout":1158165,"diskwrite":8633466880,"maxmem":2147483648,"maxdisk":5368709120,"vmid":301,"name":"deb-13-ansible"},{"diskread":0,"disk":0,"netout":0,"maxcpu":1,"netin":0,"cpu":0,"status":"stopped","type":"qemu","uptime":0,"id":"qemu/302","node":"pve","mem":0,"template":0,"name":"deb-13-docker","vmid":302,"maxmem":2147483648,"maxdisk":5368709120,"diskwrite":0},{"diskwrite":20054380544,"maxmem":2147483648,"maxdisk":16106127360,"vmid":303,"name":"deb-13-syncthing","mem":1980162048,"template":0,"id":"qemu/303","uptime":4332032,"node":"pve","maxcpu":1,"netin":36971882817,"type":"qemu","status":"running","cpu":0.00438320661726355,"diskread":2164313798,"disk":0,"netout":29304468586},{"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":7860064256,"name":"deb-13-jellyfin","vmid":304,"node":"pve","id":"qemu/304","uptime":4332028,"template":0,"mem":1181073408,"disk":0,"netout":1262302,"diskread":599981766,"cpu":0.00328740496294766,"status":"running","type":"qemu","netin":1332074257,"maxcpu":1}]}
+[90mTue, 16 Dec 2025 14:48:54 +0100[0m DBG [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:982[0m[36m >[0m vm does not exist [36merror=[0m[31m[1m"vm '200' not found"[0m[0m [36mloggerName=[0mresource_vm_read [36mvmid=[0m200
+[90mTue, 16 Dec 2025 14:52:01 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:153[0m[36m >[0m [1mEnabling the capture of log-library logs as ithe _capturelog flag was detected[0m
+[90mTue, 16 Dec 2025 14:52:01 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:186[0m[36m >[0m [1mLogging Started. Root Logger Set to level debug[0m
+[90mTue, 16 Dec 2025 14:52:01 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:968[0m[36m >[0m [1mReading configuration for vmid[0m [36mloggerName=[0mresource_vm_read [36mvmid=[0m200
+2025/12/16 14:52:01 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:01 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1947
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:51:40 GMT
+Expires: Tue, 16 Dec 2025 13:51:40 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"maxmem":4294967296,"maxdisk":356482285568,"diskwrite":0,"name":"deb-syncthing","vmid":100,"id":"qemu/100","uptime":0,"node":"pve","mem":0,"template":0,"diskread":0,"netout":0,"disk":0,"maxcpu":1,"netin":0,"cpu":0,"status":"stopped","type":"qemu"},{"node":"pve","uptime":0,"id":"qemu/101","template":0,"mem":0,"netout":0,"disk":0,"diskread":0,"cpu":0,"status":"stopped","type":"qemu","maxcpu":1,"netin":0,"maxdisk":53687091200,"maxmem":2147483648,"diskwrite":0,"name":"freebsd-web","vmid":101},{"disk":0,"netout":0,"diskread":0,"type":"qemu","cpu":0,"status":"stopped","netin":0,"maxcpu":1,"node":"pve","uptime":0,"id":"qemu/300","template":1,"mem":0,"name":"deb-13-clean","vmid":300,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":0},{"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":8633503744,"name":"deb-13-ansible","vmid":301,"node":"pve","id":"qemu/301","uptime":4332215,"template":0,"mem":1519607808,"disk":0,"netout":1158165,"diskread":486272590,"type":"qemu","cpu":0.0021962710868175,"status":"running","netin":1354286230,"maxcpu":1},{"mem":0,"template":0,"id":"qemu/302","uptime":0,"node":"pve","netin":0,"maxcpu":1,"cpu":0,"status":"stopped","type":"qemu","diskread":0,"disk":0,"netout":0,"diskwrite":0,"maxmem":2147483648,"maxdisk":5368709120,"vmid":302,"name":"deb-13-docker"},{"netin":36971958301,"maxcpu":1,"type":"qemu","status":"running","cpu":0.00439254217363501,"diskread":2164313798,"disk":0,"netout":29304486504,"mem":1980162048,"template":0,"uptime":4332222,"id":"qemu/303","node":"pve","vmid":303,"name":"deb-13-syncthing","diskwrite":20055150592,"maxmem":2147483648,"maxdisk":16106127360},{"node":"pve","uptime":4332218,"id":"qemu/304","template":0,"mem":1181073408,"disk":0,"netout":1262302,"diskread":599981766,"type":"qemu","status":"running","cpu":0.00439254217363501,"maxcpu":1,"netin":1332135042,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":7860113408,"name":"deb-13-jellyfin","vmid":304}]}
+[90mTue, 16 Dec 2025 14:52:01 +0100[0m DBG [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:982[0m[36m >[0m vm does not exist [36merror=[0m[31m[1m"vm '200' not found"[0m[0m [36mloggerName=[0mresource_vm_read [36mvmid=[0m200
+[90mTue, 16 Dec 2025 14:52:14 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:153[0m[36m >[0m [1mEnabling the capture of log-library logs as ithe _capturelog flag was detected[0m
+[90mTue, 16 Dec 2025 14:52:14 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:186[0m[36m >[0m [1mLogging Started. Root Logger Set to level debug[0m
+[90mTue, 16 Dec 2025 14:52:14 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:968[0m[36m >[0m [1mReading configuration for vmid[0m [36mloggerName=[0mresource_vm_read [36mvmid=[0m200
+2025/12/16 14:52:14 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:14 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1947
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:51:53 GMT
+Expires: Tue, 16 Dec 2025 13:51:53 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"name":"deb-syncthing","vmid":100,"maxdisk":356482285568,"maxmem":4294967296,"diskwrite":0,"disk":0,"netout":0,"diskread":0,"type":"qemu","status":"stopped","cpu":0,"maxcpu":1,"netin":0,"node":"pve","id":"qemu/100","uptime":0,"template":0,"mem":0},{"mem":0,"template":0,"uptime":0,"id":"qemu/101","node":"pve","netin":0,"maxcpu":1,"status":"stopped","cpu":0,"type":"qemu","diskread":0,"netout":0,"disk":0,"diskwrite":0,"maxmem":2147483648,"maxdisk":53687091200,"vmid":101,"name":"freebsd-web"},{"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":0,"name":"deb-13-clean","vmid":300,"node":"pve","id":"qemu/300","uptime":0,"template":1,"mem":0,"disk":0,"netout":0,"diskread":0,"status":"stopped","cpu":0,"type":"qemu","maxcpu":1,"netin":0},{"maxmem":2147483648,"maxdisk":5368709120,"diskwrite":8633503744,"name":"deb-13-ansible","vmid":301,"id":"qemu/301","uptime":4332225,"node":"pve","mem":1519607808,"template":0,"diskread":486272590,"netout":1158165,"disk":0,"netin":1354286878,"maxcpu":1,"cpu":0.0019760828852507,"status":"running","type":"qemu"},{"name":"deb-13-docker","vmid":302,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":0,"disk":0,"netout":0,"diskread":0,"type":"qemu","status":"stopped","cpu":0,"maxcpu":1,"netin":0,"node":"pve","uptime":0,"id":"qemu/302","template":0,"mem":0},{"name":"deb-13-syncthing","vmid":303,"maxdisk":16106127360,"maxmem":2147483648,"diskwrite":20055326720,"netout":29304487318,"disk":0,"diskread":2164313798,"type":"qemu","status":"running","cpu":0.00592824865575209,"netin":36971958563,"maxcpu":1,"node":"pve","id":"qemu/303","uptime":4332232,"template":0,"mem":1980162048},{"diskwrite":7860113408,"maxdisk":5368709120,"maxmem":2147483648,"vmid":304,"name":"deb-13-jellyfin","template":0,"mem":1181073408,"node":"pve","id":"qemu/304","uptime":4332228,"type":"qemu","status":"running","cpu":0.00296412432787604,"maxcpu":1,"netin":1332135690,"disk":0,"netout":1262302,"diskread":599981766}]}
+[90mTue, 16 Dec 2025 14:52:14 +0100[0m DBG [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:982[0m[36m >[0m vm does not exist [36merror=[0m[31m[1m"vm '200' not found"[0m[0m [36mloggerName=[0mresource_vm_read [36mvmid=[0m200
+[90mTue, 16 Dec 2025 14:52:33 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:153[0m[36m >[0m [1mEnabling the capture of log-library logs as ithe _capturelog flag was detected[0m
+[90mTue, 16 Dec 2025 14:52:33 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/util.go:186[0m[36m >[0m [1mLogging Started. Root Logger Set to level debug[0m
+2025/12/16 14:52:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2025/12/16 14:52:34 [DEBUG] setting computed for "smbios" from ComputedKeys
+[90mTue, 16 Dec 2025 14:52:34 +0100[0m [32mINF[0m [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:540[0m[36m >[0m [1mVM creation[0m [36mloggerName=[0mresource_vm_create [36mvmid=[0m
+[90mTue, 16 Dec 2025 14:52:34 +0100[0m DBG [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:541[0m[36m >[0m VM creation resource data: '' [36mloggerName=[0mresource_vm_create [36mvmid=[0m
+2025/12/16 14:52:34 [DEBUG][QemuVmCreate] checking if vmId: 200 already exists
+2025/12/16 14:52:34 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:34 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1948
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:13 GMT
+Expires: Tue, 16 Dec 2025 13:52:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"diskwrite":0,"maxmem":4294967296,"maxdisk":356482285568,"vmid":100,"name":"deb-syncthing","mem":0,"template":0,"id":"qemu/100","uptime":0,"node":"pve","maxcpu":1,"netin":0,"status":"stopped","cpu":0,"type":"qemu","diskread":0,"netout":0,"disk":0},{"diskwrite":0,"maxmem":2147483648,"maxdisk":53687091200,"vmid":101,"name":"freebsd-web","mem":0,"template":0,"uptime":0,"id":"qemu/101","node":"pve","netin":0,"maxcpu":1,"type":"qemu","status":"stopped","cpu":0,"diskread":0,"netout":0,"disk":0},{"uptime":0,"id":"qemu/300","node":"pve","mem":0,"template":1,"diskread":0,"disk":0,"netout":0,"maxcpu":1,"netin":0,"cpu":0,"status":"stopped","type":"qemu","maxmem":2147483648,"maxdisk":5368709120,"diskwrite":0,"name":"deb-13-clean","vmid":300},{"name":"deb-13-ansible","vmid":301,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":8633516032,"netout":1158165,"disk":0,"diskread":486272590,"type":"qemu","cpu":0.00198051118038883,"status":"running","netin":1354288472,"maxcpu":1,"node":"pve","id":"qemu/301","uptime":4332245,"template":0,"mem":1519607808},{"maxmem":2147483648,"maxdisk":5368709120,"diskwrite":0,"name":"deb-13-docker","vmid":302,"uptime":0,"id":"qemu/302","node":"pve","mem":0,"template":0,"diskread":0,"disk":0,"netout":0,"netin":0,"maxcpu":1,"type":"qemu","cpu":0,"status":"stopped"},{"diskwrite":20055343104,"maxmem":2147483648,"maxdisk":16106127360,"vmid":303,"name":"deb-13-syncthing","mem":1980162048,"template":0,"uptime":4332252,"id":"qemu/303","node":"pve","netin":36971960619,"maxcpu":1,"type":"qemu","status":"running","cpu":0.00396102236077765,"diskread":2164313798,"netout":29304487836,"disk":0},{"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":7860113408,"name":"deb-13-jellyfin","vmid":304,"node":"pve","uptime":4332249,"id":"qemu/304","template":0,"mem":1181073408,"netout":1262302,"disk":0,"diskread":599981766,"type":"qemu","cpu":0.00297076677058324,"status":"running","maxcpu":1,"netin":1332137284}]}
+2025/12/16 14:52:34 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:34 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 1948
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:13 GMT
+Expires: Tue, 16 Dec 2025 13:52:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"name":"deb-syncthing","vmid":100,"maxmem":4294967296,"maxdisk":356482285568,"diskwrite":0,"diskread":0,"disk":0,"netout":0,"netin":0,"maxcpu":1,"type":"qemu","cpu":0,"status":"stopped","id":"qemu/100","uptime":0,"node":"pve","mem":0,"template":0},{"node":"pve","uptime":0,"id":"qemu/101","template":0,"mem":0,"netout":0,"disk":0,"diskread":0,"status":"stopped","cpu":0,"type":"qemu","maxcpu":1,"netin":0,"maxdisk":53687091200,"maxmem":2147483648,"diskwrite":0,"name":"freebsd-web","vmid":101},{"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":0,"name":"deb-13-clean","vmid":300,"node":"pve","uptime":0,"id":"qemu/300","template":1,"mem":0,"disk":0,"netout":0,"diskread":0,"type":"qemu","status":"stopped","cpu":0,"netin":0,"maxcpu":1},{"node":"pve","id":"qemu/301","uptime":4332245,"template":0,"mem":1519607808,"netout":1158165,"disk":0,"diskread":486272590,"cpu":0.00198051118038883,"status":"running","type":"qemu","netin":1354288472,"maxcpu":1,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":8633516032,"name":"deb-13-ansible","vmid":301},{"diskwrite":0,"maxmem":2147483648,"maxdisk":5368709120,"vmid":302,"name":"deb-13-docker","mem":0,"template":0,"id":"qemu/302","uptime":0,"node":"pve","netin":0,"maxcpu":1,"type":"qemu","status":"stopped","cpu":0,"diskread":0,"disk":0,"netout":0},{"name":"deb-13-syncthing","vmid":303,"maxmem":2147483648,"maxdisk":16106127360,"diskwrite":20055343104,"diskread":2164313798,"netout":29304487836,"disk":0,"netin":36971960619,"maxcpu":1,"type":"qemu","cpu":0.00396102236077765,"status":"running","uptime":4332252,"id":"qemu/303","node":"pve","mem":1980162048,"template":0},{"vmid":304,"name":"deb-13-jellyfin","diskwrite":7860113408,"maxmem":2147483648,"maxdisk":5368709120,"netin":1332137284,"maxcpu":1,"status":"running","cpu":0.00297076677058324,"type":"qemu","diskread":599981766,"disk":0,"netout":1262302,"mem":1181073408,"template":0,"uptime":4332249,"id":"qemu/304","node":"pve"}]}
+2025/12/16 14:52:34 [DEBUG][QemuVmCreate] cloning VM
+[90mTue, 16 Dec 2025 14:52:34 +0100[0m DBG [1mgithub.com/Telmate/terraform-provider-proxmox/v2/proxmox/resource_vm_qemu.go:680[0m[36m >[0m Cloning VM [36mloggerName=[0mresource_vm_create [36mvmid=[0m
+2025/12/16 14:52:34 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/qemu/300/clone HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 50
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip
+
+full=0&name=debian-production&newid=200&target=pve
+2025/12/16 14:52:34 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 83
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:13 GMT
+Expires: Tue, 16 Dec 2025 13:52:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":"UPID:pve:002D7E3B:19D2A0C3:6941640D:qmclone:300:terraform@pam!terraform:"}
+2025/12/16 14:52:34 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:002D7E3B:19D2A0C3:6941640D:qmclone:300:terraform@pam!terraform:/status HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:34 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 253
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:13 GMT
+Expires: Tue, 16 Dec 2025 13:52:13 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:pve:002D7E3B:19D2A0C3:6941640D:qmclone:300:terraform@pam!terraform:","status":"running","pstart":433234115,"pid":2981435,"tokenid":"terraform","starttime":1765893133,"type":"qmclone","user":"terraform@pam","id":"300","node":"pve"}}
+2025/12/16 14:52:36 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/tasks/UPID:pve:002D7E3B:19D2A0C3:6941640D:qmclone:300:terraform@pam!terraform:/status HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:36 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 271
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:15 GMT
+Expires: Tue, 16 Dec 2025 13:52:15 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"upid":"UPID:pve:002D7E3B:19D2A0C3:6941640D:qmclone:300:terraform@pam!terraform:","pstart":433234115,"status":"stopped","exitstatus":"OK","tokenid":"terraform","pid":2981435,"starttime":1765893133,"type":"qmclone","user":"terraform@pam","node":"pve","id":"300"}}
+2025/12/16 14:52:46 [DEBUG][QemuVmCreate] update VM after clone
+2025/12/16 14:52:46 >>>>>>>>>> REQUEST:
+GET /api2/json/nodes/pve/qemu/200/config HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:46 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 567
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:25 GMT
+Expires: Tue, 16 Dec 2025 13:52:25 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"boot":"order=scsi0;ide2;net0","scsi0":"local-lvm:vm-200-disk-0,iothread=1,size=5G","sockets":1,"ide2":"local:iso/debian-13.0.0-amd64-netinst.iso,media=cdrom,size=754M","cores":1,"name":"debian-production","net0":"virtio=BC:24:11:B4:CF:88,bridge=vmbr0,firewall=1","digest":"c63ece8422e7de4aa116ead02b4d0fb29f474364","meta":"creation-qemu=9.2.0,ctime=1757144751","cpu":"x86-64-v2-AES","numa":0,"ostype":"l26","scsihw":"virtio-scsi-single","vmgenid":"bd38cfb9-7a5b-493f-924e-97c3286d32a7","memory":"2048","smbios1":"uuid=839e3abf-0ee5-4689-a7a0-c5472cb859b3"}}
+2025/12/16 14:52:46 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/resources?type=vm HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:46 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 2199
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:25 GMT
+Expires: Tue, 16 Dec 2025 13:52:25 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":[{"vmid":100,"name":"deb-syncthing","diskwrite":0,"maxmem":4294967296,"maxdisk":356482285568,"netin":0,"maxcpu":1,"cpu":0,"status":"stopped","type":"qemu","diskread":0,"netout":0,"disk":0,"mem":0,"template":0,"id":"qemu/100","uptime":0,"node":"pve"},{"diskwrite":0,"maxmem":2147483648,"maxdisk":53687091200,"vmid":101,"name":"freebsd-web","mem":0,"template":0,"id":"qemu/101","uptime":0,"node":"pve","netin":0,"maxcpu":1,"cpu":0,"status":"stopped","type":"qemu","diskread":0,"netout":0,"disk":0},{"netout":0,"disk":0,"diskread":0,"cpu":0,"status":"stopped","type":"qemu","maxcpu":1,"netin":0,"node":"pve","id":"qemu/200","uptime":0,"template":0,"mem":0,"name":"debian-production","vmid":200,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":0},{"maxmem":2147483648,"maxdisk":5368709120,"diskwrite":0,"name":"deb-13-clean","vmid":300,"uptime":0,"id":"qemu/300","node":"pve","mem":0,"template":1,"diskread":0,"netout":0,"disk":0,"maxcpu":1,"netin":0,"type":"qemu","cpu":0,"status":"stopped"},{"name":"deb-13-ansible","vmid":301,"maxdisk":5368709120,"maxmem":2147483648,"diskwrite":8633516032,"disk":0,"netout":1158165,"diskread":486272590,"type":"qemu","cpu":0.00197801319909788,"status":"running","maxcpu":1,"netin":1354292830,"node":"pve","id":"qemu/301","uptime":4332256,"template":0,"mem":1519607808},{"vmid":302,"name":"deb-13-docker","diskwrite":0,"maxdisk":5368709120,"maxmem":2147483648,"cpu":0,"status":"stopped","type":"qemu","netin":0,"maxcpu":1,"disk":0,"netout":0,"diskread":0,"template":0,"mem":0,"node":"pve","uptime":0,"id":"qemu/302"},{"uptime":4332262,"id":"qemu/303","node":"pve","mem":1980162048,"template":0,"diskread":2164313798,"disk":0,"netout":29304488766,"netin":36971964677,"maxcpu":1,"status":"running","cpu":0.00692304619684257,"type":"qemu","maxmem":2147483648,"maxdisk":16106127360,"diskwrite":20055379968,"name":"deb-13-syncthing","vmid":303},{"uptime":4332259,"id":"qemu/304","node":"pve","mem":1181073408,"template":0,"diskread":599981766,"netout":1262302,"disk":0,"netin":1332141642,"maxcpu":1,"status":"running","cpu":0.00395602639819575,"type":"qemu","maxmem":2147483648,"maxdisk":5368709120,"diskwrite":7860113408,"name":"deb-13-jellyfin","vmid":304}]}
+2025/12/16 14:52:46 >>>>>>>>>> REQUEST:
+GET /api2/json/cluster/ha/resources/200 HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:46 <<<<<<<<<< RESULT:
+HTTP/1.1 500 no such resource 'vm:200'
+Connection: close
+Content-Length: 53
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:25 GMT
+Expires: Tue, 16 Dec 2025 13:52:25 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"message":"no such resource 'vm:200'\n","data":null}
+2025/12/16 14:52:46 >>>>>>>>>> REQUEST:
+GET /api2/json/version HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Accept-Encoding: gzip
+
+2025/12/16 14:52:46 <<<<<<<<<< RESULT:
+HTTP/1.1 200 OK
+Content-Length: 73
+Cache-Control: max-age=0
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:25 GMT
+Expires: Tue, 16 Dec 2025 13:52:25 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"data":{"version":"8.4.11","release":"8.4","repoid":"14a32011146091ed"}}
+2025/12/16 14:52:46 >>>>>>>>>> REQUEST:
+POST /api2/json/nodes/pve/qemu/200/move_disk HTTP/1.1
+Host: 192.168.1.220:8006
+User-Agent: Go-http-client/1.1
+Content-Length: 46
+Accept: application/json
+Authorization: PVEAPIToken=terraform@pam!terraform=8700e894-be13-433f-8fc8-a58683f6fd7c
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip
+
+delete=1&disk=scsi0&format=qcow2&storage=local
+2025/12/16 14:52:46 <<<<<<<<<< RESULT:
+HTTP/1.1 400 Parameter verification failed.
+Connection: close
+Content-Length: 124
+Cache-Control: max-age=0
+Content-Type: application/json;charset=UTF-8
+Date: Tue, 16 Dec 2025 13:52:25 GMT
+Expires: Tue, 16 Dec 2025 13:52:25 GMT
+Pragma: no-cache
+Server: pve-api-daemon/3.0
+
+{"message":"Parameter verification failed.\n","errors":{"storage":"storage 'local' does not support vm images"},"data":null}
