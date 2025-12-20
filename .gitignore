@@ -1,2 +1,2 @@
 # ignore credentials
-credentials.auto.tfvars
+*.auto.tfvars
